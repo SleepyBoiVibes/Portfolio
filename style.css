@@ -93,7 +93,7 @@ header h1 {
     border: 1px solid #eee;
     transition: 0.3s;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 .project-card:hover {
@@ -110,7 +110,8 @@ header h1 {
 .project-info {
     padding: 25px;
     text-align: center;
-    flex-grow: 1; 
+    flex-grow: 1;
+}
 
 .project-info h3 {
     margin-bottom: 10px;
@@ -154,13 +155,15 @@ header h1 {
     text-align: center;
     background-color: #f9f9f9;
     padding: 40px;
-    border-radius: 8px; 
+    border-radius: 8px;
+    border: 1px solid #eee;
 }
 
 .pricing-box h3, .features-box h3 {
     letter-spacing: 2px;
     margin-bottom: 20px;
     font-size: 1.1rem;
+    color: #000;
 }
 
 .price-tier {
@@ -171,32 +174,23 @@ header h1 {
 
 .price-tier:last-child {
     border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 .price-tier h4 {
     font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #000;
-}
-
-.price-tier p {
-    font-size: 0.9rem;
-    color: #555;
+    margin-bottom: 5px;
 }
 
 .features-box ul {
     list-style: none;
     text-align: left;
-    max-width: 200px;
+    max-width: 250px;
     margin: 0 auto;
 }
 
 .features-box li {
     margin-bottom: 15px;
     font-size: 1rem;
-    color: #444;
     font-weight: bold;
 }
 
