@@ -29,20 +29,47 @@ header {
 header h1 {
     font-size: 2.5rem;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-header p {
+.subtitle {
     color: #777;
     text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* New Bio Styling */
+.bio {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1rem;
+    color: #444;
 }
 
 .contact-info {
-    margin-top: 15px;
-    font-size: 0.8rem;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
     font-weight: bold;
+    color: #222;
+}
+
+/* New Button Styling */
+.btn-main {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background-color: #444;
 }
 
 /* PORTFOLIO GRID */
@@ -65,6 +92,8 @@ header p {
     background: #fff;
     border: 1px solid #eee;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column; /* Keeps the button at the bottom */
 }
 
 .project-card:hover {
@@ -81,6 +110,7 @@ header p {
 .project-info {
     padding: 25px;
     text-align: center;
+    flex-grow: 1; /* Pushes the view link down evenly */
 }
 
 .project-info h3 {
@@ -102,12 +132,79 @@ header p {
     text-transform: uppercase;
     border-bottom: 2px solid #000;
     padding-bottom: 5px;
+    display: inline-block;
+}
+
+/* PRICING AND FEATURES SECTION */
+.services-info {
+    background-color: #fff;
+    padding: 80px 0;
+    border-top: 1px solid #eee;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.pricing-box, .features-box {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px; /* Slightly rounds the edges of the boxes */
+}
+
+.pricing-box h3, .features-box h3 {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.price-tier {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.price-tier:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.price-tier h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.price-tier p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.features-box ul {
+    list-style: none;
+    text-align: left;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.features-box li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #444;
+    font-weight: bold;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 60px 0;
-    background-color: #fff;
-    border-top: 1px solid #eee;
+    background-color: #111; /* Changed to dark so it looks like a real footer */
+    color: #fff;
 }
