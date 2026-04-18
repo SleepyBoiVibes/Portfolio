@@ -174,10 +174,41 @@ header h1 {
     color: #d7ba8d;
 }
 
-/* FOOTER */
+/* FOOTER STYLING */
 footer {
     text-align: center;
-    padding: 60px 0;
+    padding: 80px 0;
     background-color: #1e140d;
     border-top: 2px solid #3e2a1c;
+}
+
+footer p {
+    margin-bottom: 20px;
+    color: #f4ece2;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #d7ba8d; /* Tan Accent */
+    font-size: 1.8rem;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f4ece2; 
+    transform: translateY(-3px);
+    display: inline-block;
+}
+
+.copyright {
+    margin-top: 40px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.6;
 }
