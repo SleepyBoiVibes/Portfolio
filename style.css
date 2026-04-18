@@ -93,7 +93,7 @@ header h1 {
     border: 1px solid #eee;
     transition: 0.3s;
     display: flex;
-    flex-direction: column; /* Keeps the button at the bottom */
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -110,8 +110,7 @@ header h1 {
 .project-info {
     padding: 25px;
     text-align: center;
-    flex-grow: 1; /* Pushes the view link down evenly */
-}
+    flex-grow: 1; 
 
 .project-info h3 {
     margin-bottom: 10px;
@@ -155,7 +154,7 @@ header h1 {
     text-align: center;
     background-color: #f9f9f9;
     padding: 40px;
-    border-radius: 8px; /* Slightly rounds the edges of the boxes */
+    border-radius: 8px; 
 }
 
 .pricing-box h3, .features-box h3 {
@@ -205,6 +204,6 @@ header h1 {
 footer {
     text-align: center;
     padding: 60px 0;
-    background-color: #111; /* Changed to dark so it looks like a real footer */
+    background-color: #111; 
     color: #fff;
 }
